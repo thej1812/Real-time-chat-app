@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color:  #e91c1c;
+  color: #fff;
+}
+body {
+  font-family:  "Anton";
+  background: #F3EEC6;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #000000;
+  background: #F3EEC6;
+}
+
+.logo {
+    margin-left: 240px;
+  font-weight:800;
+  font-size: 24px;
+  letter-spacing: 1px;
+ 
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+  font-size: 22px;
+  padding-right: 80px;
+}
+
+a:hover {
+   text-decoration: underline;
+text-decoration-color: black;
+
+
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+ letter-spacing: 6px;
+  font-weight: bolder;
+  line-height: 1.3;
+  color: #000;
+}
+
+.shop-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+  font-family: "Anton";
+}
+
+.shop-btn:hover {
+  background-color: #fcf4ba;
+  color: #000;
+}
+.sneaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: 100px;
+  gap: 0; /* No space between grid boxes */
+}
+
+.sneaker-card {
+  
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  width: 100%;
+  height: 433px; /* Set height of each box */
+  overflow: hidden;
+}
+
+.sneaker-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers entire box */
+  display: block;
+}
