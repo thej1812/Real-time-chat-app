@@ -14,7 +14,7 @@ export default function JoinRoom() {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/api/rooms/join", { name, password });
+      await axios.post("https://real-time-chat-app-cyln.onrender.com/api/rooms/join", { name, password });
       navigate(`/chat/${name}`, { state: { username } });
     } catch {
       alert("Invalid room or password!");
