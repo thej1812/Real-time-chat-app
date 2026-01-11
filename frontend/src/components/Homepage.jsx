@@ -1,5 +1,5 @@
 import React from "react";
-import "./homepage.css";
+import "./Homepage.css";
 
 export default function Homepage() {
   return (
