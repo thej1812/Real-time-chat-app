@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import './Joinroom.css'
+import './joinroom.css'
 export default function JoinRoom() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
