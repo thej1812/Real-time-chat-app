@@ -14,7 +14,7 @@ export default function CreateRoom() {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/api/rooms/create", { name, password });
+      await axios.post("https://real-time-chat-app-cyln.onrender.com/api/rooms/create", { name, password });
       navigate(`/chat/${name}`, { state: { username } });
     } catch {
       alert("Room already exists. Try another name!");
